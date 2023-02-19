@@ -1,0 +1,7 @@
+
+
+Added routing protection i.e if we access route/events/new, we can access New event form which will not get submitted as no token for it,
+but to avoid accessing that page.
+
+Added a checkAuthLoader() in auth.js
+and used above loader in edit and new route
