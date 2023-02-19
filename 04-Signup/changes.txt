@@ -1,0 +1,4 @@
+
+
+Added changes in Authentication.js
+Used action as authAction created in above file in App.js
