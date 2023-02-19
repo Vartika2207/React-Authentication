@@ -1,0 +1,6 @@
+
+
+In AuthForm.js removed state and changed button to link to get route_path?mode=login or signin.
+Added useSearchParams hook and changes in AuthForm.js
+Also updated line 44 in MainNavigation.js
+
