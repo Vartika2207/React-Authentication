@@ -1,0 +1,11 @@
+
+
+
+Previous automatic logic has a flaw, if we reloaded the application the useEffect will trigger again and since token is still present in localStorage,
+the time is set to 1 hr again.
+Hence added expiration date logic in pages>Authentication.js with the time when we first got token
+
+In auth.js in getAuthToken() checked using expiration date bu adding a function getTokenDuration() to check remaining time.
+Updated token duration logic in Root.js
+
+Removed expiration from localStorage in Logout.js
