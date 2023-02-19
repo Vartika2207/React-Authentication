@@ -1,0 +1,10 @@
+
+Added button 'Logout' in MainNavigation.js
+Added new file pages>Logout.js to delete local storage, to get rid of token
+In App.js added new route that has only action no component.
+After above step added wrapped button in Form and added action of logout and a method of post.
+
+
+
+
+
