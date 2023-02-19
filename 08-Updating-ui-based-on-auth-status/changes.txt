@@ -1,0 +1,16 @@
+
+
+Not using getAuth token in MainNavigation.js bcz the function is only called when component being re-evaluate if token is deleted in future.
+We can used react-context, but we can also use react route which wraps all routes.
+We added loader which takes localStorage and then token would be available through loader data in all other routes.
+Created tokenLoader in auth.js file and added in App.js in root loader which will be called whenever a new navigation action occurs for eg. when triggered logout.
+Now we always checks current status of token whenever user does anything on page, submits or navigate around and ensures it always have lastest info about token.
+
+Now this root-token can be used anywhere.
+Using token in MainNavigation.js and fetching it using useRouteLoaderData hook having id as 'root'.
+Based on presence of session token, login logout are displayed or hidden in MainNavigation.js
+
+Doing similar process in EventsNavigation.js for New events which will be shown if token prosent.
+
+Doing similar proces in EventItems.js
+
