@@ -1,0 +1,8 @@
+
+
+In Authentication.js extracted token and stored it localStorage.
+Added new folder util and a auth.js file.
+Fetching token created above in EventDetails.js in action function while deleting events.
+Added token in action in EventForm.js
+
+
